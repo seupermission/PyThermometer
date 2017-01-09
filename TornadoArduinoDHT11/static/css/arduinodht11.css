@@ -1,0 +1,11 @@
+html {
+         height: 100%;font: normal 13px  "HelveticaNeue-Light", Helvetica, Georgia, sans-serif; 
+     }
+
+body{
+         height: 100%;font: normal 13px  "HelveticaNeue-Light", Helvetica, Georgia, sans-serif;           
+         background: url(/static/img/background1.jpg);
+         background-repeat:no-repeat;
+         background-size:cover;
+     }
+ 
