@@ -20,7 +20,7 @@ import os
 
 import json
 
-from DHTSensor_monitor import *
+from DHT_monitor import *
 
 clients = []
 

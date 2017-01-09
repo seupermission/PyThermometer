@@ -39,7 +39,7 @@ def openSerial():
         print("Connected on ", port)
         time.sleep(1.5)  # Arduino is reset when opening port so wait before communicating
     except:
-        print("Failed to connect on ", port,"you shoule change port = 'COM4'to your board port" )
+        print("Failed to connect on ", port," change COM4 to your board port" )
 
 
 def getTHD():
