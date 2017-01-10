@@ -141,11 +141,11 @@ class PlottingDataMonitor(QMainWindow):
         table.setRowCount(self.RowCount)
         table.setColumnCount(4)
 
-        table.setHorizontalHeaderLabels(['Time', 'Temperature', 'Humidity', 'HeatIndex'])
+        table.setHorizontalHeaderLabels(['Time', 'T(°C)', 'H(%)', 'HI(°C)'])
         table.horizontalHeader().setStretchLastSection(True)
         table.setColumnWidth(0, 70)
-        table.setColumnWidth(1, 85)
-        table.setColumnWidth(2, 65)
+        table.setColumnWidth(1, 75)
+        table.setColumnWidth(2, 75)
         for x in range(table.columnCount()):
             headItem = table.horizontalHeaderItem(x)
             headItem.setTextColor(QColor(200, 111, 30))
@@ -197,11 +197,11 @@ class PlottingDataMonitor(QMainWindow):
 
         # spins_hbox.addStretch(1)
 
-        self.gCheckBox = [self.create_checkbox("Temperature(t)", Qt.red, self.activate_curve, 0),
+        self.gCheckBox = [self.create_checkbox("Temperature(T)", Qt.red, self.activate_curve, 0),
                           self.create_checkbox(
-                              "Humidity(h)", Qt.green, self.activate_curve, 1),
+                              "Humidity(H)", Qt.green, self.activate_curve, 1),
                           self.create_checkbox(
-                              "Heat Index(a)", Qt.blue, self.activate_curve, 2)
+                              "Heat Index(HI)", Qt.blue, self.activate_curve, 2)
                           ]
 
         self.button_clear = QPushButton("Clear screen")
@@ -215,16 +215,16 @@ class PlottingDataMonitor(QMainWindow):
        # (QWidget * widget, int fromRow, int fromColumn,
        # int rowSpan, int columnSpan, Qt::Alignment alignment = 0)
         plot_layout.addWidget(self.plot, 0, 0, 9, 6)
-
-        plot_layout.addWidget(self.table, 4, 6, 3, 3)
-
+       
         plot_layout.addWidget(self.gCheckBox[0], 0, 6)
         plot_layout.addWidget(self.gCheckBox[1], 1, 6)
         plot_layout.addWidget(self.gCheckBox[2], 2, 6)
 
-        plot_layout.addWidget(self.button_clear, 3, 6, 1, 2)
+        plot_layout.addWidget(self.button_clear, 0, 7, 1, 1)
 
-        plot_layout.addLayout(spins_hbox, 3, 8)
+        plot_layout.addLayout(spins_hbox, 2, 7)
+
+        plot_layout.addWidget(self.table, 3, 6, 4, 3)
 
         plot_groupbox = QGroupBox('DHT11')
         plot_groupbox.setLayout(plot_layout)
