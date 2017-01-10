@@ -4,14 +4,16 @@
 
 #include "DHT.h"
 
-#define DHTPIN 2        // the digital pin of Arduino which DHT11 is connected to
+// the digital pin of Arduino which DHT11 is connected to，
+//  DHT11 is connected to  pin 3 of GoKit 
+#define DHTPIN 3     
 #define DHTTYPE DHT11   // DHT 11
 
 // ------------------------------------   LAYLOUT   --------------------------
-//  Connect DHT11 pin 1(on the left,power)   ->  Arduino +5V
-//  Connect DHT11 pin 2(data)                ->  your DHTPIN in Arduino,for example pin 2
-//  Connect DHT11 pin 4(on the right)        ->  Arduino GROUND
-//  Connect DHT11 pin 2(data)                ->  a 10K resistor  ->  DHT11 pin 1 (power) 
+//  Connect DHT11 pin 1(VCC,on the left,power)   ->  Arduino +5V
+//  Connect DHT11 pin 2(data)                    ->  your DHTPIN in Arduino,for example pin 3
+//  Connect DHT11 pin 4(GND,on the right)        ->  Arduino GROUND
+//  Connect DHT11 pin 2(data) -> a 10K resistor  ->  DHT11 pin 1 (power) 
 
 // Initialize DHT sensor.
 DHT dht(DHTPIN, DHTTYPE);

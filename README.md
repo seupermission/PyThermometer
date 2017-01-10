@@ -10,9 +10,9 @@
 
 ## HardWare
   
-* Board:  [Arduino uno](http://www.arduino.cc/) or [GoKit](http://www.gizwits.com/zh-cn/gokit/)
+* Board:  [Arduino uno](http://www.arduino.cc/) 
 
-![Arduino](./doc/arduino.jpg) ![GoKit2](./doc/gokit2.png) 
+![Arduino](./doc/arduino.jpg)
 
 * Sensor: [DHT11](http://playground.arduino.cc/Main/DHT11Lib)
 
@@ -22,7 +22,7 @@
  ```  
    Connect DHT11 pin 1(VCC,left,power)   ->  Arduino +5V
 
-   Connect DHT11 pin 2(DATA,signal)      ->  your DHTPIN in Arduino UNO,for example pin 2
+   Connect DHT11 pin 2(DATA,signal)      ->  your DHTPIN in Arduino UNO,for example pin 3
 
    Connect DHT11 pin 4(GND,right)        ->  Arduino GROUND
 
@@ -32,9 +32,7 @@
 
 ## Arduino sketch  
 
-*  **Arduino UNO**: Open **DHTSensor.ino**, build and upload to Arduino UNO
-
-*  **GoKit:**       Open **GoKitDHTSensor.ino**, build and upload to GoKit
+* Open **ArduinoDHTSensor.ino**, build and upload to Arduino/GoKit 
 
 ## Python and Packages
 
@@ -82,8 +80,6 @@
 2. Arduino and Python: http://playground.arduino.cc/Interfacing/Python
 
 3. DHT11：http://playground.arduino.cc/Main/DHT11Lib
-
-4. GizWits：https://github.com/gizwits
 
 5. PyQt: https://riverbankcomputing.com/software/pyqt/intro
 
