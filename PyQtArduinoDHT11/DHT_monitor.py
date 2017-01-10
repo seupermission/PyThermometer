@@ -118,8 +118,8 @@ class PlottingDataMonitor(QMainWindow):
         plot.replot()
 
         curve = [None] * 3
-        pen = [QPen(QColor('limegreen')), QPen(
-            QColor('red')), QPen(QColor('blue'))]
+        pen = [QPen(QColor('red')), QPen(
+            QColor('green')), QPen(QColor('blue'))]
 
         for i in range(3):
             curve[i] = Qwt.QwtPlotCurve('')
@@ -142,7 +142,7 @@ class PlottingDataMonitor(QMainWindow):
         table.setRowCount(self.RowCount)
         table.setColumnCount(4)
 
-        table.setHorizontalHeaderLabels(['时间', '温度', '湿度', '体感'])
+        table.setHorizontalHeaderLabels(['Time', 'T', 'H', 'HI'])
         table.horizontalHeader().setStretchLastSection(True)
         table.setColumnWidth(0, 80)
         table.setColumnWidth(1, 75)
@@ -165,7 +165,7 @@ class PlottingDataMonitor(QMainWindow):
         """
         checkBox = QCheckBox(label)
         checkBox.setChecked(1)
-        checkBox.setFont(QFont("Arial", pointSize=12, weight=QFont.Bold))
+        checkBox.setFont(QFont("Arial", pointSize=9, weight=QFont.Bold))
         green = QPalette()
         green.setColor(QPalette.Foreground, color)
         checkBox.setPalette(green)
@@ -198,9 +198,9 @@ class PlottingDataMonitor(QMainWindow):
 
         # spins_hbox.addStretch(1)
 
-        self.gCheckBox = [self.create_checkbox("Temperature(t)", Qt.green, self.activate_curve, 0),
+        self.gCheckBox = [self.create_checkbox("Temperature(t)", Qt.red, self.activate_curve, 0),
                           self.create_checkbox(
-                              "Humidity(h)", Qt.red, self.activate_curve, 1),
+                              "Humidity(h)", Qt.green, self.activate_curve, 1),
                           self.create_checkbox(
                               "Heat Index(a)", Qt.blue, self.activate_curve, 2)
                           ]
@@ -307,7 +307,7 @@ class PlottingDataMonitor(QMainWindow):
         item, ok = QInputDialog.getItem(self, 'Select a port',
                                         'Serial port:', ports, 0, False)
 
-        if ok and not item.isEmpty():
+        if ok and not (item==''):
             self.portname.setText(item)
             self.set_actions_enable_state()
 
@@ -438,7 +438,7 @@ class PlottingDataMonitor(QMainWindow):
 
             self.currecordid += 1
 
-            # save data -如果保存的数量大，保存时间长，需要改为线程
+            # save data 
             self.csvdata.append(
                 [data['timestamp'], data['t'], data['h'], data['d']])
             print(len(self.csvdata))
