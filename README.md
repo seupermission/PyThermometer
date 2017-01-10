@@ -52,12 +52,6 @@
 
 * The GUI application is modified from: mba7  https://github.com/mba7/SerialPort-RealTime-Data-Plotter,
 
-  * add tableview
-
-  * serial port communication protocol is changed
-
-  * PythonQwt 
-
 ## TornadoArduinoDHT11
 
 * A web monitor with Tornado web server enables real time plotting of DHT11 signals in the browser(support websocket)

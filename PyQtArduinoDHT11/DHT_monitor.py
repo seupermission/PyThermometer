@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-A threaded GUI Monitor with Python and PyQt4 plots live data using PythonQwt
+A threaded GUI Monitor with PyQt4 plots live data using PythonQwt
 
 Code modified from mba7 (monta.bha@gmail.com)
 
@@ -99,7 +99,7 @@ class PlottingDataMonitor(QMainWindow):
 
     def create_plot(self):
         """
-        Purpose:   create the pyqwt plot
+        Purpose:   create the pythonqwt plot
         Return:    return a list containing the plot and the list of the curves
         """
         plot = Qwt.QwtPlot(self)
@@ -246,7 +246,9 @@ class PlottingDataMonitor(QMainWindow):
         self.setCentralWidget(self.main_frame)
 
     def clear_screen(self):
-        g_samples[0] = []
+        self.g_samples[0] = []
+        self.g_samples[1] = []
+        self.g_samples[2] = []
 
     def activate_curve(self, axe):
         if self.gCheckBox[axe].isChecked():
@@ -260,9 +262,9 @@ class PlottingDataMonitor(QMainWindow):
         selectport_action = self.create_action("Select COM &Port...",
                                                shortcut="Ctrl+P", slot=self.on_select_port, tip="Select a COM port")
         self.start_action = self.create_action("&Start monitor",
-                                               shortcut="Ctrl+M", slot=self.OnStart, tip="Start the data monitor")
+                                               shortcut="Ctrl+M", slot=self.OnStart, tip="Start the monitor")
         self.stop_action = self.create_action("&Stop monitor",
-                                              shortcut="Ctrl+T", slot=self.OnStop, tip="Stop the data monitor")
+                                              shortcut="Ctrl+T", slot=self.OnStop, tip="Stop the monitor")
         exit_action = self.create_action("E&xit", slot=self.close,
                                          shortcut="Ctrl+X", tip="Exit the application")
 
@@ -322,7 +324,7 @@ class PlottingDataMonitor(QMainWindow):
             vNbCombo += value + " - "
         vNbCombo = vNbCombo[:-3]
 
-        debug(("--> Les ports series disponibles sont: %s " % (vNbCombo)))
+        debug(("--> ports series : %s " % (vNbCombo)))
 
     def OnStart(self):
         """
@@ -396,10 +398,10 @@ class PlottingDataMonitor(QMainWindow):
 
     def update_monitor(self):
         """
-            Updates the state of the monitor window with new
-            data. The livefeed is used to find out whether new
-            data was received since the last update. If not,
-            nothing is updated.
+            Updates the state of the monitor window with new data.
+            The livefeed is used to find out whether new  data 
+            was received since the last update. 
+            If not, nothing is updated.
         """
         if self.livefeed.has_new_data:
 
