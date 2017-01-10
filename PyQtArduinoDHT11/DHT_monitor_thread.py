@@ -32,8 +32,8 @@ def getvalue(line, itemname, unitstr):
 
 
 class ComMonitorThread(threading.Thread):
-    """ A thread for monitoring a COM port. The COM port is 
-        opened when the thread is started.
+    """ A thread for monitoring a COM port.
+        The COM port is  opened when the thread is started.
 
         data_q:
             Queue for received data. Items in the queue are
