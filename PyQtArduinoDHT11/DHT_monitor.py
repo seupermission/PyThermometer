@@ -131,7 +131,7 @@ class PlottingDataMonitor(QMainWindow):
 
     def create_tableview(self):
         """
-        Purpose:   create the table
+        Purpose:   create the table：5*4
         Return:    return a table containing the list of the data
         """
         self.RowCount = 5
