@@ -118,8 +118,7 @@ class PlottingDataMonitor(QMainWindow):
         plot.replot()
 
         curve = [None] * 3
-        pen = [QPen(QColor('red')), QPen(
-            QColor('green')), QPen(QColor('blue'))]
+        pen = [QPen(QColor('red')), QPen(QColor('green')), QPen(QColor('blue'))]
 
         for i in range(3):
             curve[i] = Qwt.QwtPlotCurve('')
@@ -142,11 +141,11 @@ class PlottingDataMonitor(QMainWindow):
         table.setRowCount(self.RowCount)
         table.setColumnCount(4)
 
-        table.setHorizontalHeaderLabels(['Time', 'T', 'H', 'HI'])
+        table.setHorizontalHeaderLabels(['Time', 'Temperature', 'Humidity', 'HeatIndex'])
         table.horizontalHeader().setStretchLastSection(True)
-        table.setColumnWidth(0, 80)
-        table.setColumnWidth(1, 75)
-        table.setColumnWidth(2, 75)
+        table.setColumnWidth(0, 70)
+        table.setColumnWidth(1, 85)
+        table.setColumnWidth(2, 65)
         for x in range(table.columnCount()):
             headItem = table.horizontalHeaderItem(x)
             headItem.setTextColor(QColor(200, 111, 30))
