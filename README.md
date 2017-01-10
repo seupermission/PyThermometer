@@ -1,12 +1,10 @@
 # Thermometer With Python
 
-* The projects of Thermometer were made as little tutorials to show the basic technologies to 
+* The projects of Thermometer were made as little tutorials/examples to show the basic technologies in the  
 
-  development applications of Real-Time Monotoring with Python
+  development of GUI/Web Real-Time SerialPort Data Monotor with Python.
 
-* We hope you will find these codes useful. 
-
-  If you have any questions and comments, please let us know: chengts95@163.com
+* If you have any comments, please tell us: chengts95@163.com
 
 ## HardWare
   
@@ -28,11 +26,11 @@
 
    Connect DHT11 pin 2(DATA,signal)      -> a 10K resistor  ->  DHT11 pin 1 (VCC) 
 ```
-![ArduinoDHT11](./doc/arduino-DHT11.png)
+![ArduinoDHT11](./doc/arduino-DHT11-layout.jpg)
 
 ## Arduino sketch  
 
-* Open **ArduinoDHTSensor.ino**, build and upload to Arduino/GoKit 
+* Open **ArduinoDHTSensor.ino**, build and upload to Arduino 
 
 ## Python and Packages
 
@@ -52,6 +50,14 @@
 ``` 
 ![DesktopDHT11](./doc/DesktopDHT11.jpg)
 
+* The GUI application is modified from: mba7  https://github.com/mba7/SerialPort-RealTime-Data-Plotter,
+
+  * add tableview
+
+  * serial port communication protocol is changed
+
+  * PythonQwt 
+
 ## TornadoArduinoDHT11
 
 * A web monitor with Tornado web server enables real time plotting of DHT11 signals in the browser(support websocket)
@@ -69,7 +75,7 @@
 
    http://localhost:8000  
 
-  You should see the graph window and be able to select the curves to display.
+  You should see the graph and be able to select the curves to display.
 ```
 ![WebDHT11](./doc/WebDHT11.jpg)
 
