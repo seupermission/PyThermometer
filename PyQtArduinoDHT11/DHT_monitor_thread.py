@@ -8,7 +8,7 @@ Code modified from mba7 (monta.bha@gmail.com)
 License: this code is in the public domain
 
 Author:   Cheng Tianshi
-Email:    chengts95@163.com
+Email:    chengts95@seu.edu.cn
 
 Last modified: 2016.7.28
 
