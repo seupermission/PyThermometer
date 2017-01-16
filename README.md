@@ -1,10 +1,12 @@
 # Thermometer With Python
 
-* The projects of Thermometer were made as little tutorials/examples to show the basic technologies in the  
+* The projects of Thermometer were made as little tutorials/examples to show the basic technologies :
 
-  development of GUI/Web Real-Time SerialPort Data Monotor with Python.
+  * thedevelopment of GUI/Web Real-Time SerialPort Data Monitor with Python.
 
-* If you have any comments, please tell us: chengts95@163.com
+  * Monitoring serial port devices with the MS Excel
+
+* If you have any comments, please tell me: chengts95@seu.edu.cn
 
 ## HardWare
   
@@ -42,7 +44,7 @@
 
 * A threaded GUI Monitor with Python and PyQt4 plots live data using PythonQwt
 
- * Technical：Python3.5,PyQt4, PySerial, PythonQwt, Thread
+ * Key Points：Python3.5,PyQt4, PySerial, PythonQwt, Thread
 
 * Launching the app
 ```
@@ -56,7 +58,7 @@
 
 * A web monitor with Tornado web server enables real time plotting of DHT11 signals in the browser(support websocket)
 
- * Technical： tornado server + websocket + flotr2 
+ * Key Points： tornado server + websocket + flotr2 
 
 *  Enjoying live data
 
@@ -72,6 +74,17 @@
   You should see the graph and be able to select the curves to display.
 ```
 ![WebDHT11](./doc/WebDHT11.jpg)
+
+## MS Excel： MonitoingDHT11SerialPortByFile.xlsm
+
+ * The Workbook provides an easy way to monitor serial port devices with the MS Excel
+   
+  * Key Points： serial port communication in the VBA through file
+
+    The advantage of this method, which uses file functions to call the serial port directly,
+    is that you do not really need to install anything on your PC, apart from the Excel itself
+
+!ExcelDHT11](./doc/ExcelDHT11.jpg)
 
 ## Reference
 
@@ -90,6 +103,8 @@
 8. Noah Gift. Practical threaded programming with Python. http://www.ibm.com/developerworks/aix/library/au-threadingpython/index.html
 
 9. mba7. SerialPort-RealTime-Data-Plotter. https://github.com/mba7/SerialPort-RealTime-Data-Plotter
+
+10. Read from Serial port to Excel. http://stackoverflow.com/questions/14792502/read-from-serial-port-to-excel
 
 ## License
 

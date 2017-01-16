@@ -1,7 +1,7 @@
 //  DHT11 temperature/humidity sensors
 //  Board: Arduino Uno/GoKit
 //     Author： Cheng Tianshi
-//     Email:    chengts95@seu.edu.cn
+//     Email:   chengts95@seu.edu.cn
 
 #include "DHT.h"
 
