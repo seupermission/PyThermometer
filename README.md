@@ -104,6 +104,8 @@
 
 9. mba7. SerialPort-RealTime-Data-Plotter. https://github.com/mba7/SerialPort-RealTime-Data-Plotter
 
+10. John Walkenbach. Excel 2013 Power Programming with VBA. John Wiley & Sons, Inc. USA. s2013
+
 10. Read from Serial port to Excel. http://stackoverflow.com/questions/14792502/read-from-serial-port-to-excel
 
 ## License
