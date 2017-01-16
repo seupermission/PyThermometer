@@ -1,8 +1,8 @@
-# Thermometer With Python
+# Thermometer With Python and VBA 
 
 * The projects of Thermometer were made as little tutorials/examples to show the basic technologies :
 
-  * thedevelopment of GUI/Web Real-Time SerialPort Data Monitor with Python.
+  * The development of GUI/Web Real-Time Serial Port  Monitor with Python.
 
   * Monitoring serial port devices with the MS Excel
 
@@ -84,7 +84,7 @@
     The advantage of this method, which uses file functions to call the serial port directly,
     is that you do not really need to install anything on your PC, apart from the Excel itself
 
-!ExcelDHT11](./doc/ExcelDHT11.jpg)
+![ExcelDHT11](./doc/ExcelDHT11.jpg)
 
 ## Reference
 
