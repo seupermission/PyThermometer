@@ -2,9 +2,11 @@
 
 * The projects of Thermometer were made as little tutorials/examples to show the basic technologies :
 
-  * The development of GUI/Web Real-Time Serial Port  Monitor with Python.
+  * The development of GUI/Web Real-time serial port monitor with Python.
 
   * Monitoring serial port devices with the MS Excel
+
+   These technologies show the easy ways to monitor serial port devices 
 
 * If you have any comments, please tell me: chengts95@seu.edu.cn
 
@@ -77,7 +79,7 @@
 
 ## MS Excel： MonitoingDHT11SerialPortByFile.xlsm
 
- * The Workbook provides an easy way to monitor serial port devices with the MS Excel
+ * The Workbook monitor serial port devices with the MS Excel
    
   * Key Points： serial port communication in the VBA through file
 
