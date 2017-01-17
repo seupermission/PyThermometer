@@ -1,12 +1,14 @@
 # Thermometer With Python and VBA 
 
-* The projects of Thermometer were made as little tutorials/examples to show the basic technologies :
+* Projects of Thermometer:
 
   * The development of GUI/Web Real-time serial port monitor with Python.
 
   * Monitoring serial port devices with the MS Excel and Python 
-
-   These technologies show the easy ways to monitor serial port devices 
+ 
+   These projects introduce some concepts and technologies to build robust and reliable 
+   
+   monitoring software of serial port devices in the easy way.
 
 * If you have any comments, please tell me: chengts95@seu.edu.cn
 
@@ -80,7 +82,7 @@
 ## MonitoringWithExcel 
 
  * MonitoringDHT11_PyCOM.xlsm: The Workbook monitor serial port devices by a COM server with Python 
-   * SerialPortCOMSrv.py : the COM server for serial port 
+   * SerialPortCOMSrv.py : the polled I/O's COM server of serial port with nonblocking call
 
 ![ExcelDHT11](./doc/ExcelDHT11.jpg)
 
