@@ -77,14 +77,9 @@
 ```
 ![WebDHT11](./doc/WebDHT11.jpg)
 
-## MS Excel： MonitoingDHT11SerialPort.xlsm
+## MS Excel： MonitoringDHT11.xlsm
 
- * The Workbook monitor serial port devices with the MS Excel
-   
-  * Key Points： serial port communication in the VBA through file
-
-    The advantage of this method, which uses file functions to call the serial port directly,
-    is that you do not really need to install anything on your PC, apart from the Excel itself
+ * The Workbook monitor serial port devices by VBA file I/O 
 
 ![ExcelDHT11](./doc/ExcelDHT11.jpg)
 
