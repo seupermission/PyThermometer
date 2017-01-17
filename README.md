@@ -77,9 +77,12 @@
 ```
 ![WebDHT11](./doc/WebDHT11.jpg)
 
-## MS Excel： MonitoringDHT11.xlsm
+## MonitoringWithExcel 
 
- * The Workbook monitor serial port devices by VBA file I/O 
+ * MonitoringDHT11_File.xlsm: The Workbook monitor serial port devices by VBA file I/O 
+
+ * MonitoringDHT11_PyCOM.xlsm: The Workbook monitor serial port devices by a COM server with Python 
+    * dht11sensor_com.py : the COM server for serial port 
 
 ![ExcelDHT11](./doc/ExcelDHT11.jpg)
 
@@ -103,7 +106,9 @@
 
 10. John Walkenbach. Excel 2013 Power Programming with VBA. John Wiley & Sons, Inc. USA. s2013
 
-10. Read from Serial port to Excel. http://stackoverflow.com/questions/14792502/read-from-serial-port-to-excel
+11. Read from Serial port to Excel. http://stackoverflow.com/questions/14792502/read-from-serial-port-to-excel
+
+12. James Ma Weiming. Mastering Python for Finance, Chapter 10 Excel with Python. P291-304. Packt Publishing. 2015
 
 ## License
 
