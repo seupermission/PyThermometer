@@ -79,7 +79,7 @@
 ```
 ![WebDHT11](./doc/WebDHT11.jpg)
 
-## MonitoringWithExcel 
+## ExcelArduinoDHT11 
 
  * MonitoringDHT11_PyCOM.xlsm: The Workbook monitor serial port devices by a COM server with Python 
    * SerialPortCOMSrv.py : the polled I/O's COM server of serial port with nonblocking call
