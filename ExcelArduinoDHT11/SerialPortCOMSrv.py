@@ -70,9 +70,9 @@ class SerialPortCOMServer:
       
 
 if __name__ == "__main__":
-    # Run "python dht11sensor_com.py"
+    # Run "python SerialPortCOMSrv.py"
     #   to register the COM server.
-    # Run "python dht11sensor_com.py --unregister"
+    # Run "python SerialPortCOMSrv.py --unregister"
     #   to unregister it.
     print("Registering COM server...")
     import win32com.server.register
