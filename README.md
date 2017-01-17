@@ -80,7 +80,7 @@
 ## MonitoringWithExcel 
 
  * MonitoringDHT11_PyCOM.xlsm: The Workbook monitor serial port devices by a COM server with Python 
-   * dht11sensor_com.py : the COM server for serial port 
+   * SerialPortCOMSrv.py : the COM server for serial port 
 
 ![ExcelDHT11](./doc/ExcelDHT11.jpg)
 

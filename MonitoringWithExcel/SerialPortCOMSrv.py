@@ -7,9 +7,9 @@ import serial
 import pythoncom
 
 
-class DHT11COMServer:
+class SerialPortCOMServer:
     _public_methods_=["Open","get_data","Close"]
-    _reg_progid_ = "DHT11COMServer.data"
+    _reg_progid_ = "SerialPortCOMServer.data"
     _reg_clsid_ = pythoncom.CreateGuid()
 
     def __init__(self):
@@ -53,4 +53,4 @@ if __name__ == "__main__":
     #   to unregister it.
     print("Registering COM server...")
     import win32com.server.register
-    win32com.server.register.UseCommandLine(DHT11COMServer)
+    win32com.server.register.UseCommandLine(SerialPortCOMServer)
