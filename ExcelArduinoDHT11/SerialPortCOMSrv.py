@@ -5,7 +5,6 @@
 
        Polled data I/O: A nonblocking call will return immediately， avoid an I/O hang.
 
-
  License: this code is in the public domain
 
  Author:   Cheng Tianshi
