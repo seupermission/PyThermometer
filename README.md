@@ -10,7 +10,7 @@
    
    monitoring software of serial port devices in the easy way.
 
-* If you have any comments, please tell me: chengts95@seu.edu.cn
+* If you have any comments, please tell me: cmh@seu.edu.cn
 
 ## HardWare
   
