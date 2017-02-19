@@ -20,6 +20,7 @@ import serial
 
 from DHT_globals import *
 
+
 def getvalue(line, itemname, unitstr):
     index = line.find(itemname)
     value = ''
@@ -91,7 +92,8 @@ class ComMonitorThread(threading.Thread):
         temperature = getvalue(line, " Temperature: ", '*C')
         heat_index = getvalue(line, " Heat index: ", '*C')
 
-        print('humidity=', humidity, 'temperature=', temperature, 'Heat index=', heat_index)
+        print('humidity=', humidity, 'temperature=',
+              temperature, 'Heat index=', heat_index)
 
         return {"t": temperature, "h": humidity, "a": heat_index}
 

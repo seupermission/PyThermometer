@@ -118,7 +118,8 @@ class PlottingDataMonitor(QMainWindow):
         plot.replot()
 
         curve = [None] * 3
-        pen = [QPen(QColor('red')), QPen(QColor('green')), QPen(QColor('blue'))]
+        pen = [QPen(QColor('red')), QPen(
+            QColor('green')), QPen(QColor('blue'))]
 
         for i in range(3):
             curve[i] = Qwt.QwtPlotCurve('')
@@ -215,7 +216,7 @@ class PlottingDataMonitor(QMainWindow):
        # (QWidget * widget, int fromRow, int fromColumn,
        # int rowSpan, int columnSpan, Qt::Alignment alignment = 0)
         plot_layout.addWidget(self.plot, 0, 0, 9, 6)
-       
+
         plot_layout.addWidget(self.gCheckBox[0], 0, 6)
         plot_layout.addWidget(self.gCheckBox[1], 1, 6)
         plot_layout.addWidget(self.gCheckBox[2], 2, 6)
@@ -308,7 +309,7 @@ class PlottingDataMonitor(QMainWindow):
         item, ok = QInputDialog.getItem(self, 'Select a port',
                                         'Serial port:', ports, 0, False)
 
-        if ok and not (item==''):
+        if ok and not (item == ''):
             self.portname.setText(item)
             self.set_actions_enable_state()
 
@@ -439,7 +440,7 @@ class PlottingDataMonitor(QMainWindow):
 
             self.currecordid += 1
 
-            # save data 
+            # save data
             self.csvdata.append(
                 [data['timestamp'], data['t'], data['h'], data['d']])
             print(len(self.csvdata))

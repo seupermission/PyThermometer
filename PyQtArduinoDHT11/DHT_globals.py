@@ -115,7 +115,7 @@ def enumerate_serial_ports():
         outAvailablePorts = []
         for i in range(256):
             try:
-                s = serial.Serial('com'+str(i))
+                s = serial.Serial('com' + str(i))
                 outAvailablePorts.append(s.portstr)
                 s.close()
             except serial.SerialException:

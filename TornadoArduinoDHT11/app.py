@@ -24,16 +24,19 @@ from DHT_monitor import *
 
 clients = []
 
+
 def checkSerial():
     t, phd = getTHD()
     for c in clients:
         c.write_message(json.dumps({'x': t, 'd0': float(
             phd['t']), 'd1': float(phd['h']), 'd2': float(phd['a'])}))
 
+
 class MainHandler(tornado.web.RequestHandler):
 
     def get(self):
         self.render("index.html")
+
 
 class WebSocketHandler(tornado.websocket.WebSocketHandler):
 
@@ -49,6 +52,7 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
         clients.remove(self)
         print("close")
 
+
 class Application(tornado.web.Application):
 
     def __init__(self):
@@ -60,7 +64,7 @@ class Application(tornado.web.Application):
             'template_path': os.path.join(os.path.dirname(__file__), "templates"),
             'static_path': os.path.join(os.path.dirname(__file__), "static")
         }
-        
+
         tornado.web.Application.__init__(self, handlers, **settings)
 
 
@@ -76,7 +80,8 @@ if __name__ == "__main__":
     # tornado.ioloop.PeriodicCallback(callback, callback_time, io_loop=None)
     # The callback is called every callback_time milliseconds.
     # Note that the timeout is given in milliseconds,
-    scheduler = tornado.ioloop.PeriodicCallback(checkSerial, 2000, io_loop=mainLoop)
+    scheduler = tornado.ioloop.PeriodicCallback(
+        checkSerial, 2000, io_loop=mainLoop)
 
     scheduler.start()
     mainLoop.start()

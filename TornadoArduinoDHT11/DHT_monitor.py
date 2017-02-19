@@ -31,15 +31,16 @@ def getvalue(line, itemname, unitstr):
 
 def openSerial():
     global ser
-    port = 'COM4' # you shoule change to your board port 
+    port = 'COM4'  # you shoule change to your board port
     baudrate = 9600
     try:
         print("Trying...", port)
         ser = serial.Serial(port, baudrate)
         print("Connected on ", port)
-        time.sleep(1.5)  # Arduino is reset when opening port so wait before communicating
+        # Arduino is reset when opening port so wait before communicating
+        time.sleep(1.5)
     except:
-        print("Failed to connect on ", port," change COM4 to your board port" )
+        print("Failed to connect on ", port, " change COM4 to your board port")
 
 
 def getTHD():
@@ -54,7 +55,8 @@ def getTHD():
     temperature = getvalue(line, " Temperature: ", '*C')
     heat_index = getvalue(line, " Heat index: ", '*C')
 
-    print(' Humidity=', humidity, 'Temperatur=', temperature, 'Heat index=', heat_index)
+    print(' Humidity=', humidity, 'Temperatur=',
+          temperature, 'Heat index=', heat_index)
 
     global t0
     t = time.time() - t0
