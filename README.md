@@ -1,10 +1,8 @@
-# Thermometer With Python and VBA 
+# Thermometer With Python  
 
 * Projects of Thermometer:
 
   * The development of GUI/Web Real-time serial port monitor with Python.
-
-  * Monitoring serial port devices with Python 
  
    These projects introduce some concepts and technologies to build robust and reliable 
    
