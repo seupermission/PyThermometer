@@ -4,7 +4,7 @@
 
   * The development of GUI/Web Real-time serial port monitor with Python.
 
-  * Monitoring serial port devices with the MS Excel and Python 
+  * Monitoring serial port devices with Python 
  
    These projects introduce some concepts and technologies to build robust and reliable 
    
@@ -79,13 +79,6 @@
 ```
 ![WebDHT11](./doc/WebDHT11.jpg)
 
-## ExcelArduinoDHT11 
-
- * MonitoringDHT11_PyCOM.xlsm: The Workbook monitor serial port devices by a COM server with Python 
-   * SerialPortCOMSrv.py : the polled I/O's COM server of serial port with nonblocking call
-
-![ExcelDHT11](./doc/ExcelDHT11.jpg)
-
 ## Reference
 
 1. Arduino: http://www.arduino.cc/
@@ -103,10 +96,6 @@
 8. Noah Gift. Practical threaded programming with Python. http://www.ibm.com/developerworks/aix/library/au-threadingpython/index.html
 
 9. mba7. SerialPort-RealTime-Data-Plotter. https://github.com/mba7/SerialPort-RealTime-Data-Plotter
-
-10. John Walkenbach. Excel 2013 Power Programming with VBA. John Wiley & Sons, Inc. USA. s2013
-
-11. James Ma Weiming. Mastering Python for Finance, Chapter 10 Excel with Python. P291-304. Packt Publishing. 2015
 
 ## License
 
