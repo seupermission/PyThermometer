@@ -4,7 +4,7 @@
 
 ## HardWare
   
-* Board:  [Arduino uno](http://www.arduino.cc/) 
+* Board:  [Arduino UNO](http://www.arduino.cc/) 
 
 ![Arduino](./doc/arduino.jpg)
 
@@ -79,19 +79,25 @@
 
 ## Reference
 
-1. Arduino: http://www.arduino.cc/
+* Arduino
+ 
+  * Arduino: http://www.arduino.cc/
 
-2. Arduino and Python: http://playground.arduino.cc/Interfacing/Python
+  * Wiring: http://wiring.org.co/
 
-3. DHT11：http://playground.arduino.cc/Main/DHT11Lib
+  * DHT11：http://playground.arduino.cc/Main/DHT11Lib
 
-5. PyQt: https://riverbankcomputing.com/software/pyqt/intro
+  * Arduino and Python: http://playground.arduino.cc/Interfacing/Python
 
-6. PythonQwt： https://github.com/PierreRaybaut/PythonQwt
+* Python
 
-7. Tornado Web Server: http://www.tornadoweb.org/en/stable/
+  * PyQt: https://riverbankcomputing.com/software/pyqt/intro
 
-8. Noah Gift. Practical threaded programming with Python. http://www.ibm.com/developerworks/aix/library/au-threadingpython/index.html
+  * PythonQwt： https://github.com/PierreRaybaut/PythonQwt
+
+  * Tornado Web Server: http://www.tornadoweb.org/en/stable/
+
+  * Noah Gift. Practical threaded programming with Python. http://www.ibm.com/developerworks/aix/library/au-threadingpython/index.html
 
 ## License
 
