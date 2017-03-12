@@ -4,9 +4,7 @@
 
   * The development of GUI/Web Real-time serial port monitor with Python.
  
-   These projects introduce some concepts and technologies to build robust and reliable 
-   
-   monitoring software of serial port devices in the easy way.
+   These projects introduce some concepts and technologies to build robust and reliable monitoring software of serial port devices in the easy way.
 
 * If you have any comments, please tell me: cmh@seu.edu.cn
 
@@ -58,13 +56,13 @@
 
 ## TornadoArduinoDHT11
 
-* A web monitor with Tornado web server enables real time plotting of DHT11 signals in the browser(support websocket)
+* A web monitor with Tornado web server enables real-time plotting of DHT11 signals in the browser(support websocket)
 
  * Key Points： tornado server + websocket + flotr2 
 
 *  Enjoying live data on **COM4**
 
-   * if your your board port is not **COM4**, you may change:
+   * if your board serial port is not **COM4**, you may change:
     
       ```python
         def openSerial():
