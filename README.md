@@ -32,7 +32,7 @@
 
 *  Python3.5 
 
-*  PyQt4, PySerial, PythonQwt, Thread, Tornado
+*  PyQt4, PySerial, PythonQwt, Tornado
 
 ## PyQtArduinoDHT11
 
