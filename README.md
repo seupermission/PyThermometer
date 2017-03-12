@@ -1,6 +1,4 @@
-# Thermometer With Python  
-
-* The GUI/Web Real-time serial port monitor with Python
+# Thermometer:  The GUI/Web Real-time Serial Port Monitor of DHT11
  
    These projects introduce some concepts and technologies to build robust and reliable monitoring software of serial port devices in the easy way.
 
