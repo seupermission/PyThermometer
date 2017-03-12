@@ -5,8 +5,8 @@ A web monitor with Tornado web server enables real time plotting of DHT11 signal
 
 License: this code is in the public domain
 
-Author:   Cheng Tianshi
-Email:    chengts95@163.com
+Author:   Cheng Maohua
+Email:    cmh@seu.edu.cn
 
 Last modified: 2016.7.28
 """

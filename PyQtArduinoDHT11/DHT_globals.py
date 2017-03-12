@@ -4,12 +4,14 @@
 """
 A threaded GUI Monitor with Python and PyQt4 plots live data using PythonQwt
 
-Code modified from mba7 (monta.bha@gmail.com)
+Code modified from mba7
+   
+    SerialPort-RealTime-Data-Plotter. https://github.com/mba7/SerialPort-RealTime-Data-Plotter
 
 License: this code is in the public domain
 
-Author:   Cheng Tianshi
-Email:    chengts95@seu.edu.cn
+Author:   Cheng Maohua
+Email:    cmh@seu.edu.cn
 
 Last modified: 2016.7.28
 

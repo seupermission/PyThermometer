@@ -30,7 +30,7 @@
 
    Connect DHT11 pin 2(DATA,signal)      -> a 10K resistor  ->  DHT11 pin 1 (VCC) 
 ```
-![ArduinoDHT11](./doc/arduino-DHT11-layout.jpg)
+![ArduinoDHT11](./doc/arduino-dht11-layout.jpg)
 
 ## Arduino sketch  
 
@@ -52,7 +52,7 @@
 ```
     >python DHT_monitor.py
 ``` 
-![DesktopDHT11](./doc/DesktopDHT11.jpg)
+![DesktopDHT11](./doc/desktop-dht11.jpg)
 
 * The GUI application is modified from: mba7  https://github.com/mba7/SerialPort-RealTime-Data-Plotter,
 
@@ -62,7 +62,15 @@
 
  * Key Points： tornado server + websocket + flotr2 
 
-*  Enjoying live data
+*  Enjoying live data on **COM4**
+
+   * if your your board port is not **COM4**, you may change:
+    
+      ```python
+        def openSerial():
+            
+            port = 'COM4'  # you shoule change to your board port
+       ```
 
 ```
   1) Launching the web server
@@ -75,7 +83,7 @@
 
   You should see the graph and be able to select the curves to display.
 ```
-![WebDHT11](./doc/WebDHT11.jpg)
+![WebDHT11](./doc/web-dht11.jpg)
 
 ## Reference
 
