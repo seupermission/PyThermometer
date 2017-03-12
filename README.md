@@ -1,12 +1,8 @@
 # Thermometer With Python  
 
-* Projects of Thermometer:
-
-  * The development of GUI/Web Real-time serial port monitor with Python.
+* The GUI/Web Real-time serial port monitor with Python
  
    These projects introduce some concepts and technologies to build robust and reliable monitoring software of serial port devices in the easy way.
-
-* If you have any comments, please tell me: cmh@seu.edu.cn
 
 ## HardWare
   
