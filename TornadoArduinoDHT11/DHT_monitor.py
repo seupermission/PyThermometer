@@ -31,7 +31,7 @@ def getvalue(line, itemname, unitstr):
 
 def openSerial():
     global ser
-    port = 'COM4'  # you shoule change to your board port
+    port = 'COM3'  # you shoule change to your board port
     baudrate = 9600
     try:
         print("Trying...", port)

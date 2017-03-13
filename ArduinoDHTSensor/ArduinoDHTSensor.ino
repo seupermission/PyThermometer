@@ -1,30 +1,32 @@
 //  DHT11 temperature/humidity sensors
 //  Board: Arduino Uno/GoKit
-//     Author： Cheng Tianshi
-//     Email:   chengts95@seu.edu.cn
+//     Author： Cheng Maohua
+//     Email:   cmh@seu.edu.cn
 
 #include "DHT.h"
 
 // the digital pin of Arduino which DHT11 is connected to，
-//  DHT11 is connected to  pin 3 of GoKit 
-#define DHTPIN 3     
-#define DHTTYPE DHT11   // DHT 11
+//  DHT11 is connected to  pin 3 of GoKit
+#define DHTPIN 3
+#define DHTTYPE DHT11 // DHT 11
 
 // ------------------------------------   LAYLOUT   --------------------------
 //  Connect DHT11 pin 1(VCC,on the left,power)   ->  Arduino +5V
 //  Connect DHT11 pin 2(data)                    ->  your DHTPIN in Arduino,for example pin 3
 //  Connect DHT11 pin 4(GND,on the right)        ->  Arduino GROUND
-//  Connect DHT11 pin 2(data) -> a 10K resistor  ->  DHT11 pin 1 (power) 
+//  Connect DHT11 pin 2(data) -> a 10K resistor  ->  DHT11 pin 1 (power)
 
 // Initialize DHT sensor.
 DHT dht(DHTPIN, DHTTYPE);
 
-void setup() {
+void setup()
+{
   Serial.begin(9600);
   dht.begin();
 }
 
-void loop() {
+void loop()
+{
   // Wait a few seconds between measurements.
   delay(2000);
 
@@ -32,9 +34,10 @@ void loop() {
   float h = dht.readHumidity();
   // Read temperature as Celsius (the default)
   float t = dht.readTemperature();
- 
+
   // Check if any reads failed and exit early (to try again).
-  if (isnan(h) || isnan(t) ) {
+  if (isnan(h) || isnan(t))
+  {
     Serial.println("Failed to read from DHT sensor!");
     return;
   }
