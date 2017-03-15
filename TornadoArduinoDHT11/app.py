@@ -17,7 +17,6 @@ import tornado.websocket
 import tornado.ioloop
 
 import os
-
 import json
 
 from DHT_monitor import *
