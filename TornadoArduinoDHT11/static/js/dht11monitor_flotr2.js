@@ -64,7 +64,7 @@ ws.onmessage = function(evt) {
 	
 	var maxstep = 100;
 	
-	var timelength = document.getElementById("ZoomRange").value;
+	var timelength = 50;
 	
 	var fromindex = d0p.length-d0p.length*timelength/maxstep;
 	

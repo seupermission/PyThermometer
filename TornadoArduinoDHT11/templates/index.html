@@ -1,75 +1,57 @@
 <html>
-	<head>
-	 	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		 <title> DHT11 monotoring with Tornado and Flotr2</title>
 
-		 <link rel="shortcut icon" href="/static/img/xb.ico">
-		 <link href="/static/css/arduinodht11.css" rel="stylesheet">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title> DHT11 monotoring with Tornado and Flotr2</title>
 
-		 <script type="text/javascript" src = "/static/js/flotr2.js"></script>
-		 <script type="text/javascript" src = "/static/js/dht11monitor_flotr2.js"></script>
+	<link rel="shortcut icon" href="/static/img/xb.ico">
+	<link href="/static/css/arduinodht11.css" rel="stylesheet">
 
-	</head>
-	<body>
-		<h1>DHT11 Monitor by Tornado Web Server</h1>
-		<hr style="height:2px;color:blue"/>
-		<div id="chkDiv"  style="float: right; width: 30%;">
-			<form name = "chk">
-				<input type="checkbox" name="pin" value="A0" checked><span style="color:red;">Temperature</span>
-				<label id='temperatureLBL'> </label>
-				<br>
-				<input type="checkbox" name="pin" value="A1"><span style="color:green;">Humidity</span>
-			    <label id='humidityLBL'> </label>
-				<br>
-				<input type="checkbox" name="pin" value="A2"><span style="color:blue;">Heat index</span>
-				<label id='heatindexLBL'> </label>
-				
-			</form>
-		</div>
+	<script type="text/javascript" src="/static/js/flotr2.js"></script>
+	<script type="text/javascript" src="/static/js/dht11monitor_flotr2.js"></script>
 
-		<div id="graphDiv"  style="float: left; width: 70%; height: 80%;"></div>
+</head>
 
-		<div id="optionDiv"  style="float: right; width: 30%;">
-		<form name = "option">
+<body>
+	<h1>DHT11 Monitor by Tornado Web Server</h1>
+	<hr style="height:2px;color:blue" />
+	<div id="chkDiv" style="float: right; width: 30%;">
+		<form name="chk">
+			<input type="checkbox" name="pin" value="A0" checked><span style="color:red;">Temperature</span>
+			<label id='temperatureLBL'> </label>
+			<br>
+			<input type="checkbox" name="pin" value="A1"><span style="color:green;">Humidity</span>
+			<label id='humidityLBL'> </label>
+			<br>
+			<input type="checkbox" name="pin" value="A2"><span style="color:blue;">Heat index</span>
+			<label id='heatindexLBL'> </label>
+		</form>
+	</div>
+
+	<div id="graphDiv" style="float: left; width: 70%; height: 80%;"></div>
+
+	<div id="optionDiv" style="float: right; width: 30%;">
+		<form name="option">
 			<fieldset>
-			    <input type="checkbox" name="pause" value="pause">Stop scrolling<br>
+				<input type="checkbox" name="pause" value="pause">Stop scrolling<br>
 
-		    	<p>
+				<p>
 					<label>Zoom:  </label>
-					<input id = "ZoomNumber"
-						type = "number"
-						min = "10"
-						max = "100"
-						value = "50"
-						step = "1"
-						onchange = "updateZoomNumber()" />
-					<br/>
-
-					min
-					<input id = "ZoomRange"
-						type = "range"
-						min = "10"
-						max = "100"
-						value = "50"
-						onchange = "updateZoomRange()" />
-					max
+					<input id="ZoomNumber" type="number" min="10" max="100" value="50" step="1" onchange="updateZoomNumber()" />
+					<br/> min
+					<input id="ZoomRange" type="range" min="10" max="100" value="50" onchange="updateZoomRange()" /> max
 				</p>
 
 			</fieldset>
 		</form>
-		</div>
+	</div>
 
+	<script type="text/javascript">
+																				(function () {
+																					drawGraph();
+																				})();
+	</script>
 
-		<div id="ledButton"  style="float: right; width: 30%;">
-		  <button type="button" id="ledon", onclick="switchledon()">Click to On LED !</button>
-		  <button type="button" id="ledoff", onclick="switchledoff()">Click to off LED !</button>
-		</div>
+</body>
 
-	 <script type="text/javascript">
-			(function () {
-    			drawGraph();
-			})();
-		</script>
-
-	</body>
 </html>

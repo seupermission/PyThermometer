@@ -61,7 +61,7 @@
       ```python
         def openSerial():
             
-            port = 'COM4'  # you shoule change to your board port
+            port = 'COM4'  # you shoule change to your board serial port
        ```
 
 ```

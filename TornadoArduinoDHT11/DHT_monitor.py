@@ -31,7 +31,7 @@ def getvalue(line, itemname, unitstr):
 
 def openSerial():
     global ser
-    port = 'COM3'  # you shoule change to your board port
+    port = 'COM3'  # you shoule change to your board serial port
     baudrate = 9600
     try:
         print("Trying...", port)
@@ -40,7 +40,7 @@ def openSerial():
         # Arduino is reset when opening port so wait before communicating
         time.sleep(1.5)
     except:
-        print("Failed to connect on ", port, " change COM4 to your board port")
+        print("Failed to connect on ", port, " change port to your board serial port")
 
 
 def getTHD():
