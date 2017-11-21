@@ -6,11 +6,11 @@
   
 * Board:  [Arduino UNO](http://www.arduino.cc/) 
 
-![Arduino](./doc/arduino.jpg)
+![Arduino](./img/arduino.jpg)
 
 * Sensor: [DHT11](http://playground.arduino.cc/Main/DHT11Lib)
 
-![DHT11](./doc/dht11-4pin.jpg)
+![DHT11](./img/dht11-4pin.jpg)
 
 ## Layout: Arduino UNO + DHT11  
  ```  
@@ -22,7 +22,7 @@
 
    Connect DHT11 pin 2(DATA,signal)      -> a 10K resistor  ->  DHT11 pin 1 (VCC) 
 ```
-![ArduinoDHT11](./doc/arduino-dht11-layout.jpg)
+![ArduinoDHT11](./img/arduino-dht11-layout.jpg)
 
 ## Arduino sketch  
 
@@ -59,7 +59,7 @@ is the installer  of PyQt4-4.11.4for 64-bit Python 3.5 and windows.
 ```
     >python DHT_monitor_app.py
 ``` 
-![DesktopDHT11](./doc/desktop-dht11.jpg)
+![DesktopDHT11](./img/desktop-dht11.jpg)
 
 * The GUI application is modified from: mba7  https://github.com/mba7/SerialPort-RealTime-Data-Plotter,
 
