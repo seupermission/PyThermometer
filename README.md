@@ -90,7 +90,7 @@ is the installer  of PyQt4-4.11.4for 64-bit Python 3.5 and windows.
 
   You should see the graph and be able to select the curves to display.
 ```
-![WebDHT11](./doc/web-dht11.jpg)
+![WebDHT11](./img/web-dht11.jpg)
 
 ## Reference
 
